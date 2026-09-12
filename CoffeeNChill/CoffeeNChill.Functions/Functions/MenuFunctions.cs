@@ -107,25 +107,27 @@ namespace CoffeeNChill.Functions.Functions
 
         [Function("UpdateMenuItem")]
         public async Task<HttpResponseData> UpdateMenuItem(
-            [HttpTrigger(AuthorizationLevel.Function, "put", Route = "menu/{category}/{id}")] HttpRequestData req,
-            string category, string id)
+     [HttpTrigger(AuthorizationLevel.Function, "put", Route = "menu/{category}/{id}")] HttpRequestData req,
+     string category, string id)
         {
             try
             {
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-                var updateData = JsonSerializer.Deserialize<Dictionary<string, object>>(requestBody);
+                var updateData = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(requestBody);
 
                 double? price = null;
                 bool? isAvailable = null;
 
-                if (updateData.ContainsKey("Price") && updateData["Price"] != null)
+                if (updateData.ContainsKey("Price") && updateData["Price"].ValueKind == JsonValueKind.Number)
                 {
-                    price = Convert.ToDouble(updateData["Price"]);
+                    price = updateData["Price"].GetDouble();
                 }
 
-                if (updateData.ContainsKey("IsAvailable") && updateData["IsAvailable"] != null)
+                if (updateData.ContainsKey("IsAvailable") &&
+                    (updateData["IsAvailable"].ValueKind == JsonValueKind.True ||
+                     updateData["IsAvailable"].ValueKind == JsonValueKind.False))
                 {
-                    isAvailable = Convert.ToBoolean(updateData["IsAvailable"]);
+                    isAvailable = updateData["IsAvailable"].GetBoolean();
                 }
 
                 var result = await _menuService.UpdateMenuItem(category, id, price, isAvailable);

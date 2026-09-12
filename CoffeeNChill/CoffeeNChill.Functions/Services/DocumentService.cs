@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using Azure.Storage.Files.Shares;
-using Azure.Storage.Files.Shares.Models;
+using Microsoft.Azure.Storage;
+using Microsoft.Azure.Storage.File;
 using Microsoft.Extensions.Logging;
 
 namespace CoffeeNChill.Functions.Services
@@ -17,84 +17,68 @@ namespace CoffeeNChill.Functions.Services
 
     public class DocumentService
     {
-        private readonly ShareClient _shareClient;
+        private readonly CloudFileShare _share;
         private readonly ILogger _logger;
 
         public DocumentService(string connectionString, string shareName, ILogger logger)
         {
-            var shareServiceClient = new ShareServiceClient(connectionString);
-            _shareClient = shareServiceClient.GetShareClient(shareName);
-            _shareClient.CreateIfNotExists();
+            if (string.IsNullOrEmpty(connectionString))
+                throw new ArgumentNullException(nameof(connectionString));
+
+            var storageAccount = CloudStorageAccount.Parse(connectionString);
+            var fileClient = storageAccount.CreateCloudFileClient();
+            _share = fileClient.GetShareReference(shareName);
+            _share.CreateIfNotExists();
             _logger = logger;
         }
 
         public async Task UploadDocumentAsync(string fileName, Stream fileStream)
         {
-            try
-            {
-                var directory = _shareClient.GetRootDirectoryClient();
-                var file = directory.GetFileClient(fileName);
-                await file.CreateAsync(fileStream.Length);
-                fileStream.Position = 0;
-                await file.UploadAsync(fileStream);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Error uploading document: {ex.Message}");
-                throw;
-            }
+            var rootDir = _share.GetRootDirectoryReference();
+            var file = rootDir.GetFileReference(fileName);
+            await file.UploadFromStreamAsync(fileStream);
         }
 
         public async Task<List<DocumentInfo>> ListDocumentsAsync()
         {
             var documents = new List<DocumentInfo>();
-            var directory = _shareClient.GetRootDirectoryClient();
+            var rootDir = _share.GetRootDirectoryReference();
 
-            await foreach (var item in directory.GetFilesAndDirectoriesAsync())
+            FileContinuationToken token = null;
+            do
             {
-                if (!item.IsDirectory)
+                var segment = await rootDir.ListFilesAndDirectoriesSegmentedAsync(token);
+                foreach (var item in segment.Results)
                 {
-                    var fileClient = directory.GetFileClient(item.Name);
-                    var properties = await fileClient.GetPropertiesAsync();
-
-                    // Get the last modified time - it's already a DateTimeOffset, not nullable
-                    var lastModified = properties.Value.LastModified;
-
-                    documents.Add(new DocumentInfo
+                    if (item is CloudFile file)
                     {
-                        Name = item.Name,
-                        Size = properties.Value.ContentLength,
-                        LastModified = lastModified.DateTime
-                    });
+                        await file.FetchAttributesAsync();
+                        documents.Add(new DocumentInfo
+                        {
+                            Name = file.Name,
+                            Size = file.Properties.Length,
+                            LastModified = file.Properties.LastModified?.DateTime ?? DateTime.Now
+                        });
+                    }
                 }
-            }
+                token = segment.ContinuationToken;
+            } while (token != null);
 
             return documents;
         }
 
         public async Task<Stream> DownloadDocumentAsync(string fileName)
         {
-            try
-            {
-                var directory = _shareClient.GetRootDirectoryClient();
-                var file = directory.GetFileClient(fileName);
+            var rootDir = _share.GetRootDirectoryReference();
+            var file = rootDir.GetFileReference(fileName);
 
-                if (!await file.ExistsAsync())
-                {
-                    return null;
-                }
+            if (!await file.ExistsAsync())
+                return null;
 
-                var downloadInfo = await file.DownloadAsync();
-                var memoryStream = new MemoryStream();
-                await downloadInfo.Value.Content.CopyToAsync(memoryStream);
-                memoryStream.Position = 0;
-                return memoryStream;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Error downloading document: {ex.Message}");
-                throw;
-            }
+            var memoryStream = new MemoryStream();
+            await file.DownloadToStreamAsync(memoryStream);
+            memoryStream.Position = 0;
+            return memoryStream;
         }
     }
 }
