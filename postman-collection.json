@@ -1,21 +1,122 @@
 {
   "info": {
-    "_postman_id": "d100510a-8b2b-40e2-a6fb-c5057da66696",
-    "name": "CoffeeNChill API Tests",
-    "description": "StartFragmentCoffeeNChill API TestsEndFragment",
+    "_postman_id": "c5ce9204-5bfc-4bc7-9c03-e79797337a42",
+    "name": "part2cloud",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "56523442",
-    "_collection_link": "https://go.postman.co/collection/56523442-d100510a-8b2b-40e2-a6fb-c5057da66696?source=collection_link"
+    "_collection_link": "https://go.postman.co/collection/56523442-c5ce9204-5bfc-4bc7-9c03-e79797337a42?source=collection_link"
   },
   "item": [
     {
-      "name": "Create Menu Item",
+      "name": "order1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"OrderId\": \"ORD-2026-3001\",\r\n  \"CustomerName\": \"Thabo Nkosi\",\r\n  \"SelectedItemSKUs\": [\"HD-2026-001\", \"PS-2026-001\"],\r\n  \"TotalPrice\": 7.20,\r\n  \"OrderTimestamp\": \"2026-10-09T10:15:00Z\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/orders/queue?code={{authCode}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "orders",
+            "queue"
+          ],
+          "query": [
+            {
+              "key": "code",
+              "value": "{{authCode}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getallorders",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/orders?code={{authCode}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "code",
+              "value": "{{authCode}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "order2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"OrderId\": \"ORD-2026-3002\",\r\n  \"CustomerName\": \"Lerato Dlamini\",\r\n  \"SelectedItemSKUs\": [\"HD-2026-050\"],\r\n  \"TotalPrice\": 4.80,\r\n  \"OrderTimestamp\": \"2026-10-09T10:20:00Z\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/orders/queue?code={{authCode}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "orders",
+            "queue"
+          ],
+          "query": [
+            {
+              "key": "code",
+              "value": "{{authCode}}"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CreateItempart1",
       "request": {
         "method": "POST",
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"PartitionKey\": \"Hot Drinks\",\r\n  \"RowKey\": \"COF-001\",\r\n  \"Name\": \"Espresso\",\r\n  \"Description\": \"Strong and rich coffee\",\r\n  \"Price\": 3.50,\r\n  \"IsAvailable\": true\r\n}",
+          "raw": "{\r\n  \"PartitionKey\": \"Hot Drinks\",\r\n  \"RowKey\": \"HD-2026-100\",\r\n  \"Name\": \"Flat White\",\r\n  \"Description\": \"Espresso with velvety microfoam\",\r\n  \"Price\": 4.50,\r\n  \"IsAvailable\": true\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -42,7 +143,7 @@
       "response": []
     },
     {
-      "name": "Get All Menu Items",
+      "name": "Getallitemspart1",
       "request": {
         "method": "GET",
         "header": [],
@@ -66,7 +167,7 @@
       "response": []
     },
     {
-      "name": "Get Items By Category",
+      "name": "Getitemsbycategorypart1",
       "request": {
         "method": "GET",
         "header": [],
@@ -92,13 +193,13 @@
       "response": []
     },
     {
-      "name": "Update Menu Item",
+      "name": "Updateitempart1",
       "request": {
         "method": "PUT",
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"Price\": 4.00,\r\n  \"IsAvailable\": false\r\n}",
+          "raw": "{\r\n  \"Price\": 4.75,\r\n  \"IsAvailable\": false\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -106,7 +207,7 @@
           }
         },
         "url": {
-          "raw": "{{baseUrl}}/api/menu/Hot%20Drinks/COF-001?code={{authCode}}",
+          "raw": "{{baseUrl}}/api/menu/Hot%20Drinks/HD-2026-100?code={{authCode}}",
           "host": [
             "{{baseUrl}}"
           ],
@@ -114,7 +215,7 @@
             "api",
             "menu",
             "Hot%20Drinks",
-            "COF-001"
+            "HD-2026-100"
           ],
           "query": [
             {
@@ -122,43 +223,6 @@
               "value": "{{authCode}}"
             }
           ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Delete Menu Item",
-      "request": {
-        "method": "DELETE",
-        "header": [],
-        "url": {
-          "raw": "{{baseUrl}}/api/menu/Hot%20Drinks/COF-001?code={{authCode}}",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "api",
-            "menu",
-            "Hot%20Drinks",
-            "COF-001"
-          ],
-          "query": [
-            {
-              "key": "code",
-              "value": "{{authCode}}"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Upload Document",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": ""
         }
       },
       "response": []
