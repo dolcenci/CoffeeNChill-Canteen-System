@@ -69,12 +69,11 @@
               "Title": "OrderFunctions.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\OrderFunctions.cs",
               "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Functions\\OrderFunctions.cs",
-              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\OrderFunctions.cs*",
-              "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\OrderFunctions.cs*",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\OrderFunctions.cs",
+              "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\OrderFunctions.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAuwIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T14:23:29.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T14:23:29.126Z"
             },
             {
               "$type": "Document",
@@ -86,8 +85,7 @@
               "RelativeToolTip": "CoffeeNChill.Functions\\Services\\OrderService.cs",
               "ViewState": "AgIAAG4AAABgZmZmZmYnwH8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T15:47:00.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T15:47:00.472Z"
             },
             {
               "$type": "Document",
@@ -107,12 +105,11 @@
               "Title": "MenuFunctions.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\MenuFunctions.cs",
               "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Functions\\MenuFunctions.cs",
-              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\MenuFunctions.cs*",
-              "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\MenuFunctions.cs*",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\MenuFunctions.cs",
+              "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\MenuFunctions.cs",
               "ViewState": "AgIAAJcAAAAAAAAAAAAuwLIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T13:32:01.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-09T13:32:01.513Z"
             },
             {
               "$type": "Document",
@@ -122,7 +119,7 @@
               "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
               "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
               "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAuwIcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAmwIIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-09T13:32:43.52Z",
               "EditorCaption": ""
