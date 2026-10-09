@@ -30,8 +30,7 @@ namespace CoffeeNChill.Functions.Functions
                 using var memoryStream = new MemoryStream();
                 await req.Body.CopyToAsync(memoryStream);
 
-                // For multipart form data, we need to handle it differently
-                // We'll use the stream directly
+                // Check multipart/form-data boundary
                 var contentType = req.Headers.GetValues("Content-Type");
                 var boundary = GetBoundary(contentType);
 
@@ -42,17 +41,18 @@ namespace CoffeeNChill.Functions.Functions
                     return badResponse;
                 }
 
-                // Simple approach: read the file from the stream
-                // For now, we'll save the file with a timestamp
+                // Save the file with a timestamped name
                 var fileName = $"upload_{DateTime.Now:yyyyMMddHHmmss}.dat";
 
-                // Reset stream position
                 memoryStream.Position = 0;
                 await _documentService.UploadDocumentAsync(fileName, memoryStream);
 
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
-                await response.WriteStringAsync($"File uploaded successfully: {fileName}");
-                response.Headers.Add("Content-Type", "application/json");
+                await response.WriteAsJsonAsync(new
+                {
+                    Message = "File uploaded successfully",
+                    FileName = fileName
+                });
                 return response;
             }
             catch (Exception ex)
@@ -69,7 +69,6 @@ namespace CoffeeNChill.Functions.Functions
             if (contentTypeValues == null)
                 return null;
 
-            // Convert to array to work with it
             var contentTypes = new List<string>(contentTypeValues);
 
             foreach (var ct in contentTypes)
@@ -97,11 +96,7 @@ namespace CoffeeNChill.Functions.Functions
             {
                 var documents = await _documentService.ListDocumentsAsync();
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
-
-                // Manual JSON serialization
-                var jsonString = System.Text.Json.JsonSerializer.Serialize(documents);
-                await response.WriteStringAsync(jsonString);
-                response.Headers.Add("Content-Type", "application/json");
+                await response.WriteAsJsonAsync(documents);
                 return response;
             }
             catch (Exception ex)
@@ -133,7 +128,6 @@ namespace CoffeeNChill.Functions.Functions
                 response.Headers.Add("Content-Type", "application/octet-stream");
                 response.Headers.Add("Content-Disposition", $"attachment; filename=\"{fileName}\"");
 
-                // Convert stream to byte array
                 var memoryStream = new MemoryStream();
                 await stream.CopyToAsync(memoryStream);
                 await response.WriteBytesAsync(memoryStream.ToArray());

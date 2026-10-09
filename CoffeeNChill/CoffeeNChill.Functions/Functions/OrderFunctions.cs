@@ -40,14 +40,14 @@ namespace CoffeeNChill.Functions.Functions
                 // Add order to queue
                 var orderId = await _orderService.AddOrderToQueueAsync(order);
 
+                // WriteAsJsonAsync sets Content-Type automatically — do NOT add it manually
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
-                await response.WriteAsJsonAsync(new 
-                { 
+                await response.WriteAsJsonAsync(new
+                {
                     Message = "Order placed successfully",
                     OrderId = orderId,
                     Status = "Received (Processing)"
                 });
-                response.Headers.Add("Content-Type", "application/json");
                 return response;
             }
             catch (Exception ex)
@@ -69,7 +69,7 @@ namespace CoffeeNChill.Functions.Functions
 
                 // Process the order
                 var orderEntity = await _orderService.ProcessOrderFromQueueAsync(queueMessage);
-                
+
                 // Simulate status updates
                 await SimulateOrderStatusUpdates(orderEntity.OrderId);
             }
@@ -114,9 +114,7 @@ namespace CoffeeNChill.Functions.Functions
             {
                 var orders = await _orderService.GetAllOrdersAsync();
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
-                var jsonString = JsonSerializer.Serialize(orders);
-                await response.WriteStringAsync(jsonString);
-                response.Headers.Add("Content-Type", "application/json");
+                await response.WriteAsJsonAsync(orders);
                 return response;
             }
             catch (Exception ex)

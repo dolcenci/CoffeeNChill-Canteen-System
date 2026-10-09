@@ -45,10 +45,9 @@ namespace CoffeeNChill.Functions.Functions
 
                 var result = await _menuService.CreateMenuItem(menuItem);
 
+                // WriteAsJsonAsync sets Content-Type automatically
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
-                var jsonString = JsonSerializer.Serialize(result);
-                await response.WriteStringAsync(jsonString);
-                response.Headers.Add("Content-Type", "application/json");
+                await response.WriteAsJsonAsync(result);
                 return response;
             }
             catch (Exception ex)
@@ -68,9 +67,7 @@ namespace CoffeeNChill.Functions.Functions
             {
                 var items = await _menuService.GetAllMenuItems();
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
-                var jsonString = JsonSerializer.Serialize(items);
-                await response.WriteStringAsync(jsonString);
-                response.Headers.Add("Content-Type", "application/json");
+                await response.WriteAsJsonAsync(items);
                 return response;
             }
             catch (Exception ex)
@@ -91,9 +88,7 @@ namespace CoffeeNChill.Functions.Functions
             {
                 var items = await _menuService.GetMenuItemsByCategory(category);
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
-                var jsonString = JsonSerializer.Serialize(items);
-                await response.WriteStringAsync(jsonString);
-                response.Headers.Add("Content-Type", "application/json");
+                await response.WriteAsJsonAsync(items);
                 return response;
             }
             catch (Exception ex)
@@ -107,8 +102,8 @@ namespace CoffeeNChill.Functions.Functions
 
         [Function("UpdateMenuItem")]
         public async Task<HttpResponseData> UpdateMenuItem(
-     [HttpTrigger(AuthorizationLevel.Function, "put", Route = "menu/{category}/{id}")] HttpRequestData req,
-     string category, string id)
+            [HttpTrigger(AuthorizationLevel.Function, "put", Route = "menu/{category}/{id}")] HttpRequestData req,
+            string category, string id)
         {
             try
             {
@@ -140,9 +135,7 @@ namespace CoffeeNChill.Functions.Functions
                 }
 
                 var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
-                var jsonString = JsonSerializer.Serialize(result);
-                await response.WriteStringAsync(jsonString);
-                response.Headers.Add("Content-Type", "application/json");
+                await response.WriteAsJsonAsync(result);
                 return response;
             }
             catch (Exception ex)

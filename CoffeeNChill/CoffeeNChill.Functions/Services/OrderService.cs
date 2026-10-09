@@ -129,7 +129,7 @@ namespace CoffeeNChill.Functions.Services
                 throw;
             }
         }
-
+       
         public async Task<List<OrderEntity>> GetAllOrdersAsync()
         {
             var orders = new List<OrderEntity>();

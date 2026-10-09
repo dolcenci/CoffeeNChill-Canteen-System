@@ -3,6 +3,33 @@
   "WorkspaceRootPath": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\functions\\documentfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\functions\\documentfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\functions\\menufunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\functions\\menufunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\functions\\orderfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\functions\\orderfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\services\\ordermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\services\\ordermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,35 +38,8 @@
       "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\functions\\menufunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\functions\\menufunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\coffeenchill.functions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\coffeenchill.functions.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\local.settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\services\\orderfunctions.ce||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\services\\orderfunctions.ce||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\services\\ordermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\services\\ordermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\functions\\documentfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|solutionrelative:coffeenchill.functions\\functions\\documentfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E04B7432-A133-71F0-3B25-48E1CCDA0793}|CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj|c:\\users\\emeris\\documents\\projects\\coffeenchill-canteen-system\\coffeenchill\\coffeenchill.functions\\services\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,17 +57,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
+              "Title": "OrderFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\OrderFunctions.cs",
+              "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Functions\\OrderFunctions.cs",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\OrderFunctions.cs",
+              "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\OrderFunctions.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAuwIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T14:23:29.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Services\\OrderService.cs",
               "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\OrderService.cs",
               "RelativeToolTip": "CoffeeNChill.Functions\\Services\\OrderService.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAUwJQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAABgZmZmZmYnwH8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-19T15:47:00.472Z",
               "EditorCaption": ""
@@ -75,19 +92,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "OrderModels.cs",
-              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\OrderModels.cs",
-              "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Services\\OrderModels.cs",
-              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\OrderModels.cs",
-              "RelativeToolTip": "CoffeeNChill.Functions\\Services\\OrderModels.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T15:46:10.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "DocumentService.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\DocumentService.cs",
               "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Services\\DocumentService.cs",
@@ -95,25 +99,61 @@
               "RelativeToolTip": "CoffeeNChill.Functions\\Services\\DocumentService.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAuwEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T13:42:03.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-09T13:42:03.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MenuFunctions.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\MenuFunctions.cs",
               "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Functions\\MenuFunctions.cs",
               "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\MenuFunctions.cs",
               "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\MenuFunctions.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAuwIUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAuwLIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-09T13:32:01.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "DocumentFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
+              "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
+              "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAswIIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T13:32:43.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderModels.cs",
+              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\OrderModels.cs",
+              "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Services\\OrderModels.cs",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\OrderModels.cs",
+              "RelativeToolTip": "CoffeeNChill.Functions\\Services\\OrderModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T15:46:10.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAACgAAAAgAAAAAIApwCkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-09-12T01:06:12.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Program.cs",
               "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Program.cs",
@@ -121,21 +161,7 @@
               "RelativeToolTip": "CoffeeNChill.Functions\\Program.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAswDsAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T13:33:10.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CoffeeNChill.Functions",
-              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj",
-              "RelativeDocumentMoniker": "CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj",
-              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj",
-              "RelativeToolTip": "CoffeeNChill.Functions\\CoffeeNChill.Functions.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-11T23:52:44.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-09T13:33:10.003Z"
             },
             {
               "$type": "Document",
@@ -147,12 +173,11 @@
               "RelativeToolTip": "..\\docker-compose.yml",
               "ViewState": "AgIAABcAAAAAzczMzMwXwBwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-08-21T07:53:24.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-21T07:53:24.968Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "local.settings.json",
               "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\local.settings.json",
               "RelativeDocumentMoniker": "CoffeeNChill.Functions\\local.settings.json",
@@ -160,34 +185,7 @@
               "RelativeToolTip": "CoffeeNChill.Functions\\local.settings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-09T13:45:30.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderFunctions.ce",
-              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\OrderFunctions.ce",
-              "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Services\\OrderFunctions.ce",
-              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Services\\OrderFunctions.ce",
-              "RelativeToolTip": "CoffeeNChill.Functions\\Services\\OrderFunctions.ce",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAuwIIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-08-19T15:47:44.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DocumentFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
-              "RelativeDocumentMoniker": "CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
-              "ToolTip": "C:\\Users\\emeris\\Documents\\Projects\\CoffeeNChill-Canteen-System\\CoffeeNChill\\CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
-              "RelativeToolTip": "CoffeeNChill.Functions\\Functions\\DocumentFunctions.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAgwJIAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T13:32:43.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-09T13:45:30.521Z"
             },
             {
               "$type": "Document",
@@ -199,8 +197,7 @@
               "RelativeToolTip": "CoffeeNChill.Functions\\Services\\MenuService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-09T13:42:39.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-09T13:42:39.998Z"
             },
             {
               "$type": "Document",
@@ -212,8 +209,7 @@
               "RelativeToolTip": "CoffeeNChill.Functions\\host.json",
               "ViewState": "AgIAAAAAAAAAAAAAAABBwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-09T13:24:29.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-09T13:24:29.365Z"
             }
           ]
         }
