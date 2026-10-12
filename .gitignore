@@ -19,10 +19,12 @@ node_modules/
 .env
 
 
+# Part 3 — Gateway project (excluded from Parts 1 & 2 submission)
+CoffeeNChill.Gateway/
+CoffeeNChill.Gateway.zip
 
 
 
 
 
 
-#
