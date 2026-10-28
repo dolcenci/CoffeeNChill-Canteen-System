@@ -24,15 +24,15 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push Functions image
+      - name: Build and push Functions image (AMD64 only)
         uses: docker/build-push-action@v5
         with:
           context: ./CoffeeNChill/CoffeeNChill.Functions
           push: true
           tags: phomeleloprosper/coffeenchill-functions:v2.0
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
 
-      - name: Build and push Gateway image
+      - name: Build and push Gateway image (Multi-platform)
         uses: docker/build-push-action@v5
         with:
           context: ./CoffeeNChill.Gateway/CoffeeNChill.Gateway
