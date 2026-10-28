@@ -1,0 +1,49 @@
+name: Build and Push to Docker Hub
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore CoffeeNChill/CoffeeNChill.slnx
+
+      - name: Build solution
+        run: dotnet build CoffeeNChill/CoffeeNChill.slnx --configuration Release --no-restore
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push Functions image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./CoffeeNChill/CoffeeNChill.Functions
+          push: true
+          tags: phomeleloprosper/coffeenchill-functions:v2.0
+          platforms: linux/amd64,linux/arm64
+
+      - name: Build and push Gateway image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./CoffeeNChill.Gateway/CoffeeNChill.Gateway
+          push: true
+          tags: phomeleloprosper/coffeenchill-gateway:v1.0
+          platforms: linux/amd64,linux/arm64
